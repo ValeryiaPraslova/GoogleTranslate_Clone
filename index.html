@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <!-- <link rel="icon" type="image/svg+xml" href="/Beagle.png" /> -->
@@ -11,11 +18,7 @@
     <header class="header">
       <!-- кнопка главное меню -->
       <div class="logoContainer">
-        <button
-          class="mainMenuButton"
-          aria-label="Главное меню"
-          title="Главное меню"
-        >
+        <button class="mainMenuButton" aria-label="Главное меню" title="Главное меню">
           <svg focusable="false" viewBox="0 0 24 24" width="24" height="24">
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
           </svg>
@@ -27,6 +30,7 @@
           href="https://translate.google.com"
           title="Goodle Переводчик"
           class="googleTranslateLink"
+          target="_blank"
         >
           <!-- изображение Google -->
           <img
@@ -49,11 +53,7 @@
         </button>
 
         <!-- кнопка приложения гугл -->
-        <button
-          class="AppGoogle"
-          aria-label="Приложения Google"
-          title="Приложения Google"
-        >
+        <button class="AppGoogle" aria-label="Приложения Google" title="Приложения Google">
           <svg focusable="false" height="24px" width="24px" viewBox="0 0 24 24">
             <path
               d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
@@ -181,9 +181,7 @@
         <button class="VirtualKeyboard" title="Включить виртуальную клавиатуру">
           <img src="/Keyboard.png" alt="error" width="40" height="40" />
         </button>
-        <button class="InputMethod" title="Выбрать способ ввода">
-          &#10136;
-        </button>
+        <button class="InputMethod" title="Выбрать способ ввода">&#10136;</button>
       </div>
 
       <div class="window2">
@@ -192,11 +190,9 @@
         <button class="Listen" title="Прослушать">&#9836;</button>
         <button class="Copy" title="Копировать перевод">&#10064;</button>
         <button class="Grade" title="Оцените этот перевод">&#9786;</button>
-        <button class="SendTranslation" title="Отправить перевод">
-          &#10070;
-        </button>
+        <button class="SendTranslation" title="Отправить перевод">&#10070;</button>
 
-        <a href="#">Отправить отзыв</a>
+        <a class="link" href="#">Отправить отзыв</a>
       </div>
     </main>
 
