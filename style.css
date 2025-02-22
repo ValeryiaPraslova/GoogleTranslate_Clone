@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #3c4043;
+  background-color: #fff;
+}
+button {
+  font-family: "Roboto", sans-serif;
+}
+.googleTranslateTitle {
+  color: #5f6368;
+  font-size: 22px;
+  line-height: 48px;
+  font-weight: normal;
+}
+.googleTranslateLink {
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+  color: #5f6368;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 400;
+}
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
