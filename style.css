@@ -1,3 +1,4 @@
+/* задание №2 */
 html,
 body {
   margin: 0;
@@ -10,18 +11,23 @@ body {
   color: #3c4043;
   background-color: #fff;
 }
+
 button {
   font-family: "Roboto", sans-serif;
+  box-sizing: content-box;
 }
+
 .googleTranslateTitle {
   color: #5f6368;
   font-size: 22px;
   line-height: 48px;
   font-weight: normal;
 }
+
 .googleTranslateLink {
   text-decoration: none;
 }
+
 .link {
   text-decoration: none;
   color: #5f6368;
@@ -29,7 +35,30 @@ button {
   font-size: 11px;
   font-weight: 400;
 }
+
 .link:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+/* стили кнопочек, задание №3 */
+/* стиль на class "logoButton" */
+.logoButton {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  color: #5f6368;
+}
+
+.logoButton:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  outline: none;
+}
+.logoButton:active {
+  background-color: rgba(60, 64, 67, 0.12);
+  outline: none;
 }

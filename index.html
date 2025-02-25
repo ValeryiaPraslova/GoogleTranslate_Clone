@@ -17,10 +17,19 @@
   <body>
     <header class="header">
       <!-- кнопка главное меню -->
-      <div class="logoContainer">
-        <button class="mainMenuButton" aria-label="Главное меню" title="Главное меню">
-          <svg focusable="false" viewBox="0 0 24 24" width="24" height="24">
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+      <div class="logoContener">
+        <button class="logoButton" aria-label="Главное меню" title="Главное меню">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M15 1H1v2h14V1ZM1 5h2v10H1V5ZM5 13h10v2H5v-2ZM15 9H5v2h10V9ZM5 5h10v2H5V5Z"
+            />
           </svg>
         </button>
 
@@ -43,8 +52,8 @@
 
       <div class="AppOrganization">
         <!-- кнопка настройка -->
-        <button class="Setting" aria-label="Настройки" title="Настройки">
-          <svg width="24" height="24" viewBox="0 0 24 24" focusable="false">
+        <button class="logoButton" aria-label="Настройки" title="Настройки">
+          <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" fill="currentColor">
             <path
               d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z"
             ></path>
@@ -53,8 +62,8 @@
         </button>
 
         <!-- кнопка приложения гугл -->
-        <button class="AppGoogle" aria-label="Приложения Google" title="Приложения Google">
-          <svg focusable="false" height="24px" width="24px" viewBox="0 0 24 24">
+        <button class="logoButton" aria-label="Приложения Google" title="Приложения Google">
+          <svg focusable="false" height="24px" width="24px" viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
             ></path>
@@ -69,7 +78,22 @@
         </button>
 
         <!-- Иконка аккаунт Google -->
-        <button class="AccountGoogle" title="Аккаунт Google">А</button>
+        <button class="logoButton" aria-label="Аккаунт Google">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M16 4v3a4 4 0 0 1-4 4h-2v4H0v-2l.932-2.13a3.94 3.94 0 0 0 4.832-2.855l-1.94-.485a1.94 1.94 0 1 1-3.765-.94l.64-2.56A4 4 0 0 1 4.579 1H10l2 3h4ZM9 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -148,11 +172,22 @@
 
         <!-- кнопочка Обратный перевод -->
         <button
-          class="ReverseTranslation"
+          class="logoButton"
           aria-label="Обратный перевод Ctrl + Shift + S"
           title="Обратный перевод Ctrl + Shift + S"
         >
-          &#8633;
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M5 16v-3h11v-2H5V8H4l-4 4 4 4h1ZM11 8V5H0V3h11V0h1l4 4-4 4h-1Z"
+            />
+          </svg>
         </button>
 
         <div class="OutputLanguages">
@@ -166,14 +201,49 @@
       <div class="window1">
         <p>окошечко</p>
         <!-- кнопка начать перевод речи -->
-        <button class="Microfon">
-          <img
-            aria-label="Начать перевод речи"
-            title="Начать перевод речи"
-            src="/Microfon.png"
-            width="40"
-            height="40"
-          />
+        <button class="logoButton" title="Начать перевод речи">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 16 16"
+          >
+            <path fill="currentColor" d="M5 3a3 3 0 0 1 6 0v4a3 3 0 0 1-6 0V3Z" />
+            <path
+              fill="currentColor"
+              d="M9 13.93V16H7v-2.07A7.001 7.001 0 0 1 1 7V6h2v1a5 5 0 0 0 10 0V6h2v1a7.001 7.001 0 0 1-6 6.93Z"
+            />
+          </svg>
+          <button class="logoButton" title="Прослушать">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path fill="currentColor" d="M15 1H4v8H3a3 3 0 1 0 3 3V5h7v4h-1a3 3 0 1 0 3 3V1Z" />
+            </svg>
+          </button>
+        </button>
+
+        <!-- кнопочка "крестик" -->
+        <button class="logoButton" title="Удалить исходный текст">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16ZM4.293 5.707 6.586 8l-2.293 2.293 1.414 1.414L8 9.414l2.293 2.293 1.414-1.414L9.414 8l2.293-2.293-1.414-1.414L8 6.586 5.707 4.293 4.293 5.707Z"
+              clip-rule="evenodd"
+            />
+          </svg>
         </button>
 
         <p>0/5000</p>
@@ -187,10 +257,72 @@
       <div class="window2">
         <p>окошечко</p>
         <p>перевод</p>
-        <button class="Listen" title="Прослушать">&#9836;</button>
-        <button class="Copy" title="Копировать перевод">&#10064;</button>
-        <button class="Grade" title="Оцените этот перевод">&#9786;</button>
-        <button class="SendTranslation" title="Отправить перевод">&#10070;</button>
+
+        <!-- кнопочка Сохранить перевод -->
+        <button class="logoButton" title="Сохранить перевод">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M1.243 8.243 8 15l6.757-6.757a4.243 4.243 0 0 0 1.243-3v-.19A4.052 4.052 0 0 0 8.783 2.52L8 3.5l-.783-.98A4.052 4.052 0 0 0 0 5.053v.19c0 1.126.447 2.205 1.243 3Z"
+            />
+          </svg>
+        </button>
+        <button class="logoButton" title="Прослушать">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 16 16"
+          >
+            <path fill="currentColor" d="M15 1H4v8H3a3 3 0 1 0 3 3V5h7v4h-1a3 3 0 1 0 3 3V1Z" />
+          </svg>
+        </button>
+
+        <button class="logoButton" title="Копировать перевод">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path fill="currentColor" d="M0 0h10v4H4v6H0V0Z" />
+            <path fill="currentColor" d="M16 6H6v10h10V6Z" />
+          </svg>
+        </button>
+
+        <button class="logoButton" title="Оцените этот перевод">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path fill="currentColor" d="M7 0 5 5v9h9l2-6V5h-6V2a2 2 0 0 0-2-2H7ZM3 5H0v9h3V5Z" />
+          </svg>
+        </button>
+        <button class="logoButton" title="Отправить перевод">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="#currentColor"
+              d="M5.14 4.726A2.5 2.5 0 1 0 3 4.792v6.416a2.5 2.5 0 1 0 2 0V7.414L7.086 9.5h2.622a2.5 2.5 0 1 0 0-2H7.914L5.14 4.726Z"
+            />
+          </svg>
+        </button>
 
         <a class="link" href="#">Отправить отзыв</a>
       </div>
