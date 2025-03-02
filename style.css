@@ -1,5 +1,8 @@
+/* задание №2 */
 html,
-body {
+body,
+main,
+footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,18 +13,23 @@ body {
   color: #3c4043;
   background-color: #fff;
 }
+
 button {
   font-family: "Roboto", sans-serif;
+  box-sizing: content-box;
 }
+
 .googleTranslateTitle {
   color: #5f6368;
   font-size: 22px;
   line-height: 48px;
   font-weight: normal;
 }
+
 .googleTranslateLink {
   text-decoration: none;
 }
+
 .link {
   text-decoration: none;
   color: #5f6368;
@@ -29,7 +37,320 @@ button {
   font-size: 11px;
   font-weight: 400;
 }
+
 .link:hover {
   cursor: pointer;
+}
+
+.link-feedback:hover {
   text-decoration: underline;
+}
+
+/* стили кнопочек, задание №3 */
+/* стиль на class "logoButton" */
+.logoButton {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  color: #5f6368;
+}
+
+.logoButton:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  outline: none;
+}
+.logoButton:active {
+  background-color: rgba(60, 64, 67, 0.12);
+  outline: none;
+}
+
+.ButtonFunction {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: transparent;
+  color: rgb(23, 78, 166);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: all 200ms ease;
+  border: 1px solid #d0d4da;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ButtonFunction:active:not(:disabled) {
+  color: rgb(140, 23, 166);
+}
+.ButtonFunction:hover {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+
+/* .clickEffect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 4px;
+  width: 4px;
+  opacity: 0;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  background-color: rgba(4, 255, 0, 0.5);
+}
+
+.ButtonImage:hover .clickEffect {
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  opacity: 0.5;
+  transform: scale(50);
+} */
+
+.Languages {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: transparent;
+  color: #5f6368;
+  box-sizing: border-box;
+  transition: all 200ms ease;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.Languages:hover {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+.Languages:active:not(:disabled) {
+  color: rgb(23, 78, 166);
+}
+
+.InputLanguages {
+  display: flex;
+  flex-direction: row;
+}
+
+/* хоспади помаги */
+.language-switcher {
+  display: inline-flex;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.languageInput {
+  display: none;
+}
+
+.languageLabel {
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: transparent;
+  color: #5f6368;
+  box-sizing: border-box;
+  transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.languageLabel:hover {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+.languageLabel:active:not(:disabled) {
+  color: rgb(23, 78, 166);
+}
+
+.languageLabel .Languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languageInput:checked + .languageLabel {
+  color: #1a73e8;
+}
+
+.language-switcher::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  height: 1.6px;
+  background: #1a73e8;
+  transition: all 0.3s ease;
+}
+
+/* Позиционирование для каждого варианта */
+/* .choseLanguage:checked ~ .language-switcher::after {
+} */
+
+.languageInput.choseLanguage:checked ~ .language-switcher::after {
+  left: 0.25%;
+  width: calc(100% / 4 - 0.5%);
+}
+
+.languageInput.eng:checked ~ .language-switcher::after {
+  left: 25.25%;
+  width: calc(100% / 4 - 0.5%);
+}
+
+.languageInput.pls:checked ~ .language-switcher::after {
+  left: 50.25%;
+  width: calc(100% / 4 - 0.5%);
+}
+
+.languageInput.rus:checked ~ .language-switcher::after {
+  left: 75.25%;
+  width: calc(100% / 4 - 0.5%);
+}
+
+/* хоспади помаги 2 */
+.InputLanguages {
+  display: flex;
+  flex-direction: row;
+}
+
+.language-switcher {
+  display: inline-flex;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.languageOutput {
+  display: none;
+}
+
+.languageLabel {
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: transparent;
+  color: #5f6368;
+  box-sizing: border-box;
+  transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.languageLabel:hover {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+.languageLabel:active:not(:disabled) {
+  color: rgb(23, 78, 166);
+}
+
+.languageLabel .Languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languageOutput:checked + .languageLabel {
+  color: #1a73e8;
+}
+
+.language-switcher::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  height: 1.6px;
+  background: #1a73e8;
+  transition: all 0.3s ease;
+}
+
+/* Позиционирование для каждого варианта */
+/* .choseLanguage:checked ~ .language-switcher::after {
+} */
+
+.languageOutput.choseLanguage:checked ~ .language-switcher::after {
+  left: 0.25%;
+  width: calc(100% / 4 - 0.5%);
+}
+
+.languageOutput.eng:checked ~ .language-switcher::after {
+  left: 25.25%;
+  width: calc(100% / 4 - 0.5%);
+}
+
+.languageOutput.pls:checked ~ .language-switcher::after {
+  left: 50.25%;
+  width: calc(100% / 4 - 0.5%);
+}
+
+.languageOutput.rus:checked ~ .language-switcher::after {
+  left: 75.25%;
+  width: calc(100% / 4 - 0.5%);
+}
+
+/* стили кнопочек "История" и "Сохраненные"*/
+.buttonHistory {
+  cursor: pointer;
+  align-items: center;
+  height: 71.6px;
+  width: 71.6px;
+  padding: 12px;
+  background-color: transparent;
+  color: #5f6368;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px #5f6368 solid;
+}
+
+.buttonHistory:hover {
+  background-color: #fff;
+  outline: #5f6368;
+}
+.buttonHistory:active {
+  background-color: #fff;
+  outline: rgb(23, 78, 166);
+  color: rgb(23, 78, 166);
+}
+.buttonHistory:active:not(:disabled) {
+  color: rgb(23, 78, 166);
+}
+.buttonHistory:hover {
+  background-color: #fff;
+}
+
+/* стиль окошечка */
+.windowFirst {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 27px;
+  min-height: 164px;
+  position: relative;
+}
+.windowSecond {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 27px;
+  min-height: 164px;
+  position: relative;
+  background: #d0d4da;
 }

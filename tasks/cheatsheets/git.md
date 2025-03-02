@@ -11,13 +11,14 @@ git pull
 Then you need to create new `branch` for each your next task. To achieve that you should use your terminal again. Try the command:
 
 ```
-git switch -c branch-name
+git switch -c type/branch-name
 ```
 
 - `git` - is an application
 - `switch` - is a command
 - `-c` - is a flag that means creating new branch
 - `branch-name` - is any task-related name you could use
+- `type` - is a `feature` for new functionality, `bugfix` - for fixising issues, `refactoring` - stands for code structural changes without implementing new functionalities.
 
 ### Step 2
 
@@ -25,7 +26,7 @@ Start work on your task. You could create `commit` whenever you want to fix your
 
 ```
 git add .
-git commit -m "header added"
+git commit -m "type: branch name"
 git push
 ```
 
