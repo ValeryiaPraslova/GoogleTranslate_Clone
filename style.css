@@ -1,8 +1,7 @@
 /* задание №2 */
 html,
 body,
-main,
-footer {
+main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -284,36 +283,6 @@ button {
   width: calc(100% / 4 - 0.5%);
 }
 
-/* стили кнопочек "История" и "Сохраненные"*/
-.buttonHistory {
-  cursor: pointer;
-  align-items: center;
-  height: 71.6px;
-  width: 71.6px;
-  padding: 12px;
-  background-color: transparent;
-  color: #5f6368;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px #5f6368 solid;
-}
-
-.buttonHistory:hover {
-  background-color: #fff;
-  outline: #5f6368;
-}
-.buttonHistory:active {
-  background-color: #fff;
-  outline: rgb(23, 78, 166);
-  color: rgb(23, 78, 166);
-}
-.buttonHistory:active:not(:disabled) {
-  color: rgb(23, 78, 166);
-}
-.buttonHistory:hover {
-  background-color: #fff;
-}
-
 /* позиционирование шапка сайта */
 .header {
   display: flex;
@@ -414,15 +383,6 @@ button {
   margin: 0 0;
 }
 
-.footer {
-  display: flex;
-  margin: 0 31px;
-  justify-content: center;
-  position: relative;
-  top: 50px;
-  gap: 20px;
-}
-
 .link {
   text-decoration: none;
   color: #5f6368;
@@ -432,21 +392,6 @@ button {
 }
 
 /* концовые кнопки "История" и  "Сохранить" */
-.buttonHistorySave {
-  display: flex;
-  text-decoration: none;
-  color: #5f6368;
-  font-style: italic;
-  font-size: 11px;
-  font-weight: 400;
-  margin-top: 8px; /* опустила немного вниз */
-  justify-content: space-evenly; /* оцентровала */
-}
-
-.buttonHistorySave:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 /* .buttonSmall {
   position: absolute;
