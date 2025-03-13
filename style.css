@@ -14,6 +14,11 @@ body {
   background-color: #fff;
 }
 
+.main {
+  margin: 0 auto;
+  padding: 0 210px;
+}
+
 button {
   font-family: "Roboto", sans-serif;
   box-sizing: content-box;
@@ -24,24 +29,26 @@ button {
   font-size: 22px;
   line-height: 48px;
   font-weight: normal;
+  margin: 0;
 }
 
 .googleTranslateLink {
   text-decoration: none;
-}
-
-.link {
-  text-decoration: none;
-  color: #5f6368;
-  font-style: italic;
-  font-size: 11px;
-  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .link:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
 
+.feedbackContainer {
+  display: flex;
+  justify-content: flex-end; /* Выравниваем кнопку справа */
+  margin-top: 10px; /* Отступ сверху */
+}
 .link-feedback:hover {
   text-decoration: underline;
 }
@@ -50,9 +57,10 @@ button {
 /* стиль на class "logoButton" */
 .logoButton {
   cursor: pointer;
-  height: 24px;
-  width: 24px;
-  padding: 12px;
+  position: relative;
+  padding: 0%;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   border: none;
   background-color: transparent;
@@ -71,8 +79,10 @@ button {
 .ButtonFunction {
   outline: none;
   cursor: pointer;
+  display: flex;
   position: relative;
-  width: 150px;
+  padding-left: 12px;
+  padding-right: 12px;
   height: 40px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -82,7 +92,6 @@ button {
   box-sizing: border-box;
   transition: all 200ms ease;
   border: 1px solid #d0d4da;
-  display: flex;
   align-items: center;
   gap: 8px;
 }
@@ -114,6 +123,9 @@ button {
   transform: scale(50);
 } */
 
+.lang {
+  display: flex;
+}
 .Languages {
   outline: none;
   cursor: pointer;
@@ -148,6 +160,8 @@ button {
   display: inline-flex;
   position: relative;
   padding-bottom: 2px;
+  flex: 1;
+  padding-left: 8px;
 }
 
 .languageInput {
@@ -157,10 +171,10 @@ button {
 .languageLabel {
   cursor: pointer;
   position: relative;
-  width: 150px;
   height: 40px;
   font-size: 0.875rem;
   font-weight: 500;
+  padding: 0 8px;
   background-color: transparent;
   color: #5f6368;
   box-sizing: border-box;
@@ -169,9 +183,11 @@ button {
   align-items: center;
   justify-content: center;
 }
+
 .languageLabel:hover {
   background-color: rgba(60, 64, 67, 0.12);
 }
+
 .languageLabel:active:not(:disabled) {
   color: rgb(23, 78, 166);
 }
@@ -233,38 +249,6 @@ button {
 
 .languageOutput {
   display: none;
-}
-
-.languageLabel {
-  cursor: pointer;
-  position: relative;
-  width: 150px;
-  height: 40px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  background-color: transparent;
-  color: #5f6368;
-  box-sizing: border-box;
-  transition: all 200ms ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.languageLabel:hover {
-  background-color: rgba(60, 64, 67, 0.12);
-}
-.languageLabel:active:not(:disabled) {
-  color: rgb(23, 78, 166);
-}
-
-.languageLabel .Languages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.languageOutput:checked + .languageLabel {
-  color: #1a73e8;
 }
 
 .language-switcher::after {
@@ -330,27 +314,152 @@ button {
   background-color: #fff;
 }
 
+/* позиционирование шапка сайта */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  top: 0;
+  position: sticky;
+
+  background-color: white;
+  z-index: 1000;
+}
+
+.logoContener {
+  display: flex;
+  gap: 4px;
+}
+.HelpFunction {
+  display: flex;
+  padding: 12px;
+  gap: 0 8px;
+}
+.buttonList {
+  display: inline-flex;
+  position: relative;
+}
+
+.groupOfLanguages {
+  display: inline-flex;
+  position: relative;
+}
+
+.windowsContainer {
+  display: flex;
+  gap: 8px;
+}
+
+/* Окна переводов */
+.window1 {
+  flex-grow: 1;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  min-height: 165px;
+  display: flex;
+}
+.window2 {
+  flex-grow: 1;
+  padding: 12px 16px;
+  background-color: #d0d4da;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  min-height: 165px;
+  display: flex;
+}
+
 /* стиль окошечка */
 .windowFirst {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 8px;
   display: flex;
   flex: 1;
   flex-direction: column;
   font-size: 14px;
-  line-height: 27px;
   min-height: 164px;
   position: relative;
 }
+/* .buttonWindow1 {
+  position: absolute;
+  top: 40%;
+} */
+
 .windowSecond {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 8px;
   display: flex;
   flex: 1;
-  flex-direction: column;
   font-size: 14px;
   line-height: 27px;
-  min-height: 164px;
   position: relative;
-  background: #d0d4da;
 }
+
+.buttonBottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* кнопочка Сохранить перевод */
+.buttontopRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.buttonRightBottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.textVolume {
+  margin: 0 0;
+}
+
+.footer {
+  display: flex;
+  margin: 0 31px;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #5f6368;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+/* концовые кнопки "История" и  "Сохранить" */
+.buttonHistorySave {
+  display: flex;
+  text-decoration: none;
+  color: #5f6368;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 8px; /* опустила немного вниз */
+  justify-content: space-evenly; /* оцентровала */
+}
+
+.buttonHistorySave:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* .buttonSmall {
+  position: absolute;
+  left: 450%;
+  bottom: -115%;
+}
+.buttonKeyboard {
+  position: absolute;
+  left: 430%;
+  bottom: -115%;
+}
+.buttonText {
+  position: absolute;
+  left: 380%;
+  top: 170%;
+} */
