@@ -1,0 +1,26 @@
+.WindowContainer {
+  flex-grow: 1;
+  padding: 12px 16px;
+  border: 1px solid;
+  border-radius: 8px;
+  min-height: 165px;
+  display: flex;
+}
+
+.white {
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.gray {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+}
+
+.ContentContainer {
+  display: flex;
+  flex: 1;
+  font-size: 14px;
+  min-height: 164px;
+  position: relative;
+}

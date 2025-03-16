@@ -1,0 +1,33 @@
+.TranslationButton {
+  cursor: pointer;
+  position: relative;
+  height: 40px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0 8px;
+  background-color: transparent;
+  color: #5f6368;
+  box-sizing: border-box;
+  transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TranslationButton:hover {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+
+.TranslationButton:active:not(:disabled) {
+  color: rgb(23, 78, 166);
+}
+
+.TranslationButton .Languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languageInput:checked + .TranslationButton {
+  color: #1a73e8;
+}

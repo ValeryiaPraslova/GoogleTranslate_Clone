@@ -1,0 +1,8 @@
+.TranslationTypeGroup {
+  display: flex;
+  padding: 12px;
+  gap: 0 8px;
+  display: inline-flex;
+  position: relative;
+  padding-bottom: 2px;
+}
