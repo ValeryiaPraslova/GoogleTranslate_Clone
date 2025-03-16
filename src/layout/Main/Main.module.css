@@ -1,0 +1,23 @@
+.Main {
+  margin: 0 auto;
+  padding: 0 210px;
+}
+
+.feedbackContainer {
+  display: flex;
+  justify-content: flex-end; /* Выравниваем кнопку справа */
+  margin-top: 10px; /* Отступ сверху */
+}
+
+.link {
+  text-decoration: none;
+  color: #5f6368;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

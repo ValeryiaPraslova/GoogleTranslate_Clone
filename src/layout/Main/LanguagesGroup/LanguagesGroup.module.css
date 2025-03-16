@@ -1,0 +1,13 @@
+.LanguagesGroup {
+  display: flex;
+  position: relative;
+  padding-bottom: 2px;
+  flex: 1;
+  padding-left: 8px;
+  justify-content: space-between;
+}
+
+.group {
+  display: flex;
+  flex: 1;
+}

@@ -1,8 +1,10 @@
-import { Footer } from "./components/Footer";
+import { Footer, Header, Main } from "./layout";
 
 function App() {
   return (
     <div>
+      <Header />
+      <Main />
       <Footer />
     </div>
   );

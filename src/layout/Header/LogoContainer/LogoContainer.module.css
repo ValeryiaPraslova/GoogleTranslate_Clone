@@ -1,0 +1,19 @@
+.logoContainer {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.googleTranslateTitle {
+  color: #5f6368;
+  font-size: 22px;
+  line-height: 48px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.googleTranslateLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

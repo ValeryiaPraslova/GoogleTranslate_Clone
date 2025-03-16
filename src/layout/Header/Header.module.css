@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  top: 0;
+  position: sticky;
+  background-color: white;
+  z-index: 1000;
+  align-items: center;
+}
+
+.AppButtons {
+  display: inline-flex;
+}
